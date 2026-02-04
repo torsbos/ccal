@@ -1,6 +1,8 @@
 ## ccal
 calcurse with import deduplication, forked from https://github.com/jonhiggs/dedupe-calcurse-appointments
+
 `ccal` is able to import `.ics` files without duplicates and without overwriting other appointments, notes or todos.
+
 # install
 edit `c_dedupe` so the file path
 ```
@@ -16,6 +18,10 @@ in `ccal` so the url to your ics file is correct.
 
 i suggest placing `ccal` in `/usr/local/bin`.
 
+make `ccal` and `c_dedupe` executable:
+```
+chmod +x ccal c_dedupe
+```
 # usage
 run `ccal` to get automatically update `calcurse` every time.
 
@@ -26,4 +32,5 @@ alias calcurse='ccal'
 
 # dependencies
 `curl`
+
 `calcurse`
