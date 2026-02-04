@@ -19,12 +19,12 @@ then edit
 ```
 in `ccal` so the url to your ics file is correct.
 
-i suggest placing `ccal` and `c_dedupe` in `/usr/local/bin` to be able to run `ccal` from anywhre on the system.
-
 make `ccal` and `c_dedupe` executable:
 ```
 chmod +x ccal c_dedupe
 ```
+
+i suggest placing `ccal` and `c_dedupe` in `/usr/local/bin` to be able to run `ccal` from anywhre on the system.
 ## usage
 run `ccal` to start `calcurse` with updated data according to the `.ics` file.
 
