@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+
+curl -Ss \
+'https://example.url/file.ics' \
+> /tmp/calcurse-import
+calcurse -i /tmp/calcurse-import
+rm /tmp/calcurse-import
+exec c_dedupe &
+exec calcurse
